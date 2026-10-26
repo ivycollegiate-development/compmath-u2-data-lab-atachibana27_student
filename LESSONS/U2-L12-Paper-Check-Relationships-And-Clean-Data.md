@@ -86,3 +86,65 @@ for r in rows:
 Trade papers with your partner. Using the key, mark each answer and write the score at the top. **Both names go on the paper you graded.**
 
 ---
+
+## PART 3 — CORRECTIONS (20 min)
+
+Take your own paper back. Correct every miss **in a different color**, and for each miss write one line:
+
+**What I had in my head** vs **what is true**
+
+*Example:*
+- What I had in my head: "removing from a list while looping over it is fine, Python handles it."
+- What is true: The iterator advances by index; removing shifts indices left, so the next item gets skipped.
+
+**Why this format:** Naming the misconception explicitly helps you not repeat it.
+
+---
+
+## PART 4 — WHAT THE CHECK TELLS US (10 min)
+
+Class discussion: which section was hardest? We re-teach the top one on the board, using *your actual wrong answers*.
+
+---
+
+## PART 5 — LOOK AHEAD: THE PROJECT (15 min, in pairs)
+
+U2 L13 covers histograms; the project launches in U2 L15 — three visualizations built from a real dataset, with cleaning you do yourself. In your notes:
+
+**Q1.** Your project chart must survive the question "where did this data come from?" Write the one-sentence provenance statement you would make for the student-performance dataset, including how many rows it had before and after cleaning.
+
+**Example:** "This dataset of 1,000 synthetic student records (generated for this course) was cleaned to 950 rows by dropping 50 rows with blank or impossible values in GPA, Age, and score columns."
+
+**Q2.** Predict: which is more dangerous to a chart — a blank cell or an impossible value? Defend your choice.
+
+**Reasoning guide:** A blank cell crashes your code (loud failure). An impossible value (GPA=9) silently skews averages, trends, and correlations (quiet failure). Quiet failures are more dangerous because they don't announce themselves.
+
+---
+
+## TURN IN — PAPER (collected at end of class)
+
+One check sheet with both names. Also submit a photo of the corrected check sheet to the U2 L12 assignment on Google Classroom by 23:59 tonight.
+
+**Keep the sheet** — it is your study guide for the unit project (U2 L15–L18) and the Unit 2 assessment (U2 L19).
+
+---
+
+## WHY THIS MATTERS
+
+This check covers the vocabulary of relationships and cleaning:
+
+- `plt.clf()`, `float("")`, `try/except`, list mutation, sanity bounds, provenance
+
+The Unit 2 project (U2 L15–L18) assumes you can:
+- Read scatter plots for direction/form/strength
+- Build a cleaning pipeline with audit trail (`clean_data.py`)
+
+If today revealed gaps, revisit U2 L10–L11 before U2 L13.
+
+---
+
+## NEXT
+
+**U2 L13 — Histograms and Distributions** [U2-L13-Histograms-And-Distributions.md](LESSONS/U2-L13-Histograms-And-Distributions.md)
+
+*(Note: U2 L13 uses the viz-basics repo, but the cleaned data from this repo feeds into it.)*

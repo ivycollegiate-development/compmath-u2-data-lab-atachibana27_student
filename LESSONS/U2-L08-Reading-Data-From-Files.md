@@ -64,3 +64,75 @@ print(f"Median: {statistics.median(math_scores):.1f}")
 **Key insight:** `"85" > "90"` is `True` in string comparison (lexicographic), but `85 > 90` is `False` numerically. Always convert.
 
 ---
+
+## PART 3 — LOAD DATA SCRIPT (20 min)
+
+Open `load_data.py`. It is a starter — you will extend it today. Run it:
+
+```bash
+python3 load_data.py
+```
+
+It should print:
+- Row count (should be 1000)
+- Column names
+- Mean Math Score
+
+**Your task:** Extend `load_data.py` to also print the mean of `Overall GPA`, `Hours Studied Per Week`, and `Absence Rate`. Handle the string→float conversion for each.
+
+---
+
+## PART 4 — PROVENANCE CHECKLIST (15 min)
+
+Before any analysis, answer these in your notes for **this dataset**:
+
+1. **Source:** Where did this data come from? (Synthetic, generated for this course)
+2. **Rows:** How many rows in the raw file? How many after filtering comments/blanks?
+3. **Columns:** What does each column measure? What are its units?
+4. **Generation:** What was the seed or method? (Seed 20261027, Faker library)
+5. **Limitations:** What can this data **not** tell you? (Not real students; correlations are engineered)
+
+**Write your answers in your notes.** This checklist is the habit — every dataset, every time.
+
+---
+
+## PART 5 — JOURNAL + PUSH (5 min)
+
+Open your journal file in your repo:
+
+```bash
+code journal-$(whoami).md
+```
+
+Answer in 2–3 sentences each:
+- What surprised you about the comment-line trap?
+- Why does the provenance checklist matter?
+
+Then push:
+
+```bash
+git add load_data.py journal-$(whoami).md
+git commit -m "L08: load data, provenance notes"
+git push
+```
+
+---
+
+## TURN IN — SCREENSHOT (due 23:59 tonight)
+
+One screenshot showing, in order:
+
+```
+python3 load_data.py
+git push
+```
+
+Submit the screenshot to the U2 L08 assignment on Google Classroom.
+
+---
+
+## WHY THIS MATTERS
+
+Every dataset you will ever meet has quirks: comment lines, blank rows, mixed types, missing values. The `csv` module gives you the raw pieces; **you** build the filter. This lesson teaches the first filter — skip comments and blanks — and the first conversion — strings to numbers. Every subsequent lab builds on this.
+
+**Next:** U2 L09 — Reflection: What Makes Data Real? [U2-L09-Reflection-What-Makes-Data-Real.md](LESSONS/U2-L09-Reflection-What-Makes-Data-Real.md)

@@ -59,3 +59,80 @@ ______________________________________________________________________________
 Then swap roles. You will each give and receive a full review.
 
 ---
+
+## PART 3 — REVISE ONE CHART FROM FEEDBACK (25 min)
+
+Open your own repo and pick the **one** chart your reviewer's suggestion would help most:
+
+```bash
+cd ~/compmath-u2-data-lab
+python3 project_charts.py
+# edit the specific chart code
+python3 project_charts.py
+# verify the fix
+code analysis.md
+# update the corresponding paragraph if needed
+```
+
+**Commit the revision:**
+
+```bash
+git add project_charts.py chart*.png analysis.md
+git commit -m "L17: peer review revision - [describe fix]"
+git push
+```
+
+**Password prompt = Personal Access Token, not your GitHub password.**
+
+---
+
+## PART 4 — JOURNAL (15 min)
+
+Open your journal file in your repo:
+
+```bash
+code journal-$(whoami).md
+```
+
+Answer in 3–4 sentences:
+
+**Why a journal:** It creates a permanent, versioned record of your review literacy. The skill of *receiving* feedback and *acting on it* is the skill that separates junior analysts from senior ones.
+
+---
+
+## PART 5 — PUSH (5 min)
+
+```bash
+git add journal-$(whoami).md
+git push
+```
+
+---
+
+## TURN IN — SCREENSHOT (due 23:59 tonight)
+
+One screenshot showing, in order:
+
+```
+git push
+```
+
+Submit the screenshot to the U2 L17 assignment on Google Classroom.
+
+**Keep the terminal open** — spot-checks happen.
+
+---
+
+## WHY THIS MATTERS
+
+**Peer review is not a formality — it is the quality gate.** Every professional visualization workflow (journalism, research, product analytics, security reporting) has a review step. The person who made the chart is the *worst* person to evaluate it — they know what they meant. The reviewer represents the audience.
+
+**The three dimensions scale:** Clarity, Honesty, Impact. These are the same criteria your project will be graded on.
+
+**U2 L18 (tomorrow) is the final polish:** You will have one more lab period to incorporate any remaining feedback, add the audience-choice chart if you want, and submit the final PR. The project is due at the end of U2 L18.
+
+---
+
+## NEXT
+
+**U2 L18 — Project Final Push: Polish and Submit** [U2-L18-Project-Final-Push-Polish-And-Submit.md](LESSONS/U2-L18-Project-Final-Push-Polish-And-Submit.md)
